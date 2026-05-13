@@ -23,7 +23,7 @@ body{
   background: rgb(245, 4, 4);
   border-radius: 50%;
   animation: bounce 0.6s infinite alternate;
-  -webkit-animation: bounce 0.6s infinite alternate;
+  -webkit-animation:;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -60,3 +60,230 @@ body{
     -o-transform: translateY(-25px);
 }
 } 
+
+
+/* From Uiverse.io by M4rco592 */ 
+.card-btn button {
+  position: relative;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  margin: 30px;
+}
+.card-btn button a {
+  text-decoration: none;
+}
+.card-btn button:hover {
+  transform: scale(1.03);
+  -webkit-transform:;
+  -moz-transform:;
+  -ms-transform:;
+  -o-transform:;
+}
+
+.card-btn button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(    from 0deg,    #ff6b6b,    #4ecdc4,    #45b7d1,    #96ceb4,    #feca57,    #ff9ff3,    #ff6b6b  );
+  z-index: -2;
+  filter: blur(10px);
+  transform: rotate(0deg);
+  transition: transform 1.5s ease-in-out;
+  -webkit-filter: blur(10px);
+  -webkit-transition: transform 1.5s ease-in-out;
+  -moz-transition: transform 1.5s ease-in-out;
+  -ms-transition: transform 1.5s ease-in-out;
+  -o-transition: transform 1.5s ease-in-out;
+}
+/* card style */
+
+
+.card{
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+  -webkit-transform: translateY(30px);
+  -moz-transform: translateY(30px);
+  -ms-transform: translateY(30px);
+  -o-transform: translateY(30px);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.card button{
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  background: crimson;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  -webkit-transform:;
+  -moz-transform:;
+  -ms-transform:;
+  -o-transform:;
+} 
+
+/* hover */
+
+ .card:hover{
+  transform: rotate(3deg);
+  -webkit-transform:;
+  -moz-transform:;
+  -ms-transform:;
+  -o-transform:;
+} 
+
+ .card:hover img{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.card:hover .overlay{
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.card:hover button{
+  bottom: 20px;
+} 
+/* clock style */
+.clock{
+  width: 300px;
+  height: 300px;
+  border: 10px solid white;
+  border-radius: 50%;
+  position: relative;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.center{
+  width: 15px;
+  height: 15px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.hand{
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+
+  transform-origin: bottom;
+}
+
+.hour{
+  width: 8px;
+  height: 70px;
+  background: white;
+  animation: rotate 43200s linear infinite;
+  -webkit-animation: rotate 43200s linear infinite;
+}
+
+.minute{
+  width: 5px;
+  height: 100px;
+  background: gray;
+  animation: rotate 3600s linear infinite;
+  -webkit-animation: rotate 3600s linear infinite;
+}
+
+.second{
+  width: 3px;
+  height: 120px;
+  background: red;
+  animation: rotate 60s linear infinite;
+  -webkit-animation: rotate 60s linear infinite;
+}
+
+@keyframes rotate{
+  from{
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  to{
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+
+
