@@ -17,7 +17,7 @@ body{
 .loader span{
   width: 25px;
   height: 25px;
-  background: rgb(245, 4, 4);
+   background: conic-gradient(    from 0deg,    #ff6b6b,    #4ecdc4,    #45b7d1,    #96ceb4,    #feca57,    #ff9ff3,    #ff6b6b  );
   border-radius: 50%;
   animation: bounce 0.6s infinite alternate;
   -webkit-animation:;
