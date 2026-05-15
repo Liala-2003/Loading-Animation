@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body{
   height: 100vh;
   display: flex;
@@ -11,12 +10,10 @@ body{
   align-items: center;
   background: #111827;
 }
-
 .loader{
   display: flex;
   gap: 20px;
 }
-
 .loader span{
   width: 25px;
   height: 25px;
@@ -29,18 +26,15 @@ body{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-
    .loader span:nth-child(2){
   animation-delay: 0.2s;
 }
-
 .loader span:nth-child(3){
   animation-delay: 0.4s;
 } 
 .loader span:nth-child(5){
   animation-delay: 0.6s;
 } 
-
 @keyframes bounce{
   from{
     transform: translateY(0);
@@ -50,7 +44,6 @@ body{
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
 }
-
   to{
     transform: translateY(-25px);
     opacity: 1;
@@ -60,9 +53,6 @@ body{
     -o-transform: translateY(-25px);
 }
 } 
-
-
-/* From Uiverse.io by M4rco592 */ 
 .card-btn button {
   position: relative;
   padding: 16px 32px;
@@ -76,39 +66,20 @@ body{
   overflow: hidden;
   transition: transform 0.2s ease;
   margin: 30px;
+  -webkit-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  -ms-transition: transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+   background: conic-gradient(    from 0deg,    #ff6b6b,    #4ecdc4,    #45b7d1,    #96ceb4,    #feca57,    #ff9ff3,    #ff6b6b  );
+   border: 1px solid white;
 }
 .card-btn button a {
   text-decoration: none;
 }
 .card-btn button:hover {
   transform: scale(1.03);
-  -webkit-transform:;
-  -moz-transform:;
-  -ms-transform:;
-  -o-transform:;
-}
-
-.card-btn button::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: conic-gradient(    from 0deg,    #ff6b6b,    #4ecdc4,    #45b7d1,    #96ceb4,    #feca57,    #ff9ff3,    #ff6b6b  );
-  z-index: -2;
-  filter: blur(10px);
-  transform: rotate(0deg);
-  transition: transform 1.5s ease-in-out;
-  -webkit-filter: blur(10px);
-  -webkit-transition: transform 1.5s ease-in-out;
-  -moz-transition: transform 1.5s ease-in-out;
-  -ms-transition: transform 1.5s ease-in-out;
-  -o-transition: transform 1.5s ease-in-out;
 }
 /* card style */
-
-
 .card{
   width: 300px;
   height: 400px;
@@ -117,8 +88,15 @@ body{
   overflow: hidden;
   position: relative;
   transition: 0.5s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
-
 .card img{
   width: 100%;
   height: 100%;
@@ -129,7 +107,6 @@ body{
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
-
 .overlay{
   position: absolute;
   top: 0;
@@ -154,7 +131,6 @@ body{
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
-
 .card button{
   position: absolute;
   bottom: -60px;
@@ -180,17 +156,13 @@ body{
   -ms-transform:;
   -o-transform:;
 } 
-
-/* hover */
-
  .card:hover{
   transform: rotate(3deg);
-  -webkit-transform:;
-  -moz-transform:;
-  -ms-transform:;
-  -o-transform:;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
 } 
-
  .card:hover img{
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -198,7 +170,6 @@ body{
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-
 .card:hover .overlay{
   opacity: 1;
   transform: translateY(0);
@@ -207,7 +178,6 @@ body{
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
 }
-
 .card:hover button{
   bottom: 20px;
 } 
@@ -223,7 +193,6 @@ body{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-
 .center{
   width: 15px;
   height: 15px;
@@ -242,12 +211,10 @@ body{
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
-
 .hand{
   position: absolute;
   bottom: 50%;
   left: 50%;
-
   transform-origin: bottom;
 }
 
@@ -256,9 +223,8 @@ body{
   height: 70px;
   background: white;
   animation: rotate 43200s linear infinite;
-  -webkit-animation: rotate 43200s linear infinite;
+  -webkit-animation:;
 }
-
 .minute{
   width: 5px;
   height: 100px;
@@ -266,7 +232,6 @@ body{
   animation: rotate 3600s linear infinite;
   -webkit-animation: rotate 3600s linear infinite;
 }
-
 .second{
   width: 3px;
   height: 120px;
@@ -274,7 +239,6 @@ body{
   animation: rotate 60s linear infinite;
   -webkit-animation: rotate 60s linear infinite;
 }
-
 @keyframes rotate{
   from{
     transform: translateX(-50%) rotate(0deg);
